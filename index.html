@@ -27,6 +27,7 @@
           <input type="submit" value="Search" class="search-button" />
         </form>
       </header>
+
       <main>
         <div id="weather-info" class="weather-info hidden">
           <div class="current-weather">
@@ -34,7 +35,7 @@
               <h1 class="current-city" id="current-city">City</h1>
               <p class="current-details">
                 <span id="current-date"></span>, <span id="weather-description"></span> <br />
-                Humidity: <strong id="humidity">0%</strong>, Wind: <strong id="wind-speed">0km/h</strong>
+                Humidity: <strong id="humidity">0%</strong>, Wind: <strong id="wind-speed">0 km/h</strong>
               </p>
             </div>
             <div class="current-temperature">
@@ -44,18 +45,25 @@
             </div>
           </div>
         </div>
+
+        <div id="forecast" class="forecast hidden">
+        </div>
+
         <div id="error-message" class="error-message hidden">
           <p>City not found. Please try again.</p>
         </div>
       </main>
+
       <footer>
         <p>
           This project was coded by
-          <a href="https://github.com/Mamkela/weather-app" target="_blank">Siyamamkela Bodla</a> and is
+          <a href="https://github.com/Mamkela/" target="_blank">Siyamamkela Bodla</a> and is
           <a href="https://weather-app.netlify.app/" target="_blank">hosted on Netlify</a>.
         </p>
       </footer>
     </div>
+
+  
     <script src="src/index.js"></script>
   </body>
 </html>
